@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lift Simulator</title>
+    
+</head>
+<body>
+  <div class = "input_container">
+    <h4 id = "floors">Number of floors = 3</h4>
+    <hr>
+    <h4 id = "lifts">Number of lifts = 1 </h4>
+    <hr>
+    
+    <div class = "container" id="container">
+      <div class="floordiv">
+        <div class="floor" data-floor="3">
+         <div class="btn-div">
+           <button class = "up-down" id="3" data-floor="3">Up</button>
+           <button class = "up-down" id="3" data-floor="3">Down</button>
+           <p class="floorName">Floor:3</p>
+          </div>
+        </div>
+      </div>
+      <div class="floordiv">
+        <div class="floor" data-floor="2">
+         <div class="btn-div">
+           <button class = "up-down" id="2" data-floor="2">Up</button>
+           <button class = "up-down" id="2" data-floor="2">Down</button>
+           <p class="floorName">Floor:2</p>
+          </div>
+        </div>
+      </div>
+      <div class="floordiv">
+        <div class="floor" data-floor="1">
+         <div class="btn-div">
+           <button class = "up-down" id="1" data-floor="1">Up</button>
+           <button class = "up-down" id="1" data-floor="1">Down</button>
+           <p class="floorName">Floor:1</p>
+          </div>
+          <div class="lift">
+            <div class="lift-div" onfloor="1" data-current-location="0">
+              <div class="left-door"></div>
+              <div class="right-door"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
