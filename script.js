@@ -1,13 +1,53 @@
+const floorInput = document.getElementById("floor-input");
+const submitButton = document.getElementById("submit-btn");
 const container = document.getElementById("container");
 const liftContainer = document.createElement("div");
+
 var prevFloor = 0 ;
-let targetFloors = 0 ;
-const floorInput = 3;
+let floorVal = "";
+let targetFloors = [] ;
 const LiftInput = 1;
-// for (let i = floorInput; i > 0; i--) {
-//   //Function to genereate floors
-//   createFloors(i, LiftInput);
-// }
+//const floorInput = 3;
+
+submitButton.addEventListener("click" , () => {
+  if (!LiftInput && !floorInput.value) {
+    alert("Please Enter number to generate Floors and Lifts");
+  } else if (!floorInput.value) {
+    alert("Please enter floor number in range 1-15");
+  // } else if (!LiftInput.value) {
+  //   alert("Please enter lift number in range 1-4");
+  // } else if (LiftInput.value > 4) {
+  //   alert("Maximum 4 lifts are allowed!");
+  
+   }
+
+  else if (LiftInput == 0 || floorInput.value == 0){
+
+        alert('Value cannot be zero');
+  }
+  
+  
+  else if (floorInput.value > 15) {
+    alert("Maximum no of floors is 15!");
+   
+  } else if (LiftInput < 0 || floorInput.value < 0) {
+    alert("No negative values are allowed");
+  
+  } else {
+    container.innerHTML = " ";
+    liftContainer.innerHTML = "";
+
+    for (let i = floorInput.value; i > 0; i--) {
+      //Function to genereate floors
+      createFloors(i, LiftInput);
+    }
+
+    floorInput.value = "";
+  }
+
+});
+
+//Function to create floors
 function createFloors(floors, lifts) {
   const floorDiv = document.createElement("div");
 
