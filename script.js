@@ -1,27 +1,29 @@
 const floorInput = document.getElementById("floor-input");
+const LiftInput = document.getElementById("lift-input");
 const submitButton = document.getElementById("submit-btn");
 const container = document.getElementById("container");
 const liftContainer = document.createElement("div");
 
 var prevFloor = 0 ;
 let floorVal = "";
+let liftVal = "";
 let targetFloors = [] ;
-const LiftInput = 1;
+// const LiftInput = 1;
 //const floorInput = 3;
 
 submitButton.addEventListener("click" , () => {
-  if (!LiftInput && !floorInput.value) {
+  if (!LiftInput.value && !floorInput.value) {
     alert("Please Enter number to generate Floors and Lifts");
   } else if (!floorInput.value) {
     alert("Please enter floor number in range 1-15");
-  // } else if (!LiftInput.value) {
-  //   alert("Please enter lift number in range 1-4");
-  // } else if (LiftInput.value > 4) {
-  //   alert("Maximum 4 lifts are allowed!");
+  } else if (!LiftInput.value) {
+    alert("Please enter lift number in range 1-4");
+  } else if (LiftInput.value > 4) {
+    alert("Maximum 4 lifts are allowed!");
   
    }
 
-  else if (LiftInput == 0 || floorInput.value == 0){
+  else if (LiftInput.value == 0 || floorInput.value == 0){
 
         alert('Value cannot be zero');
   }
@@ -30,7 +32,7 @@ submitButton.addEventListener("click" , () => {
   else if (floorInput.value > 15) {
     alert("Maximum no of floors is 15!");
    
-  } else if (LiftInput < 0 || floorInput.value < 0) {
+  } else if (LiftInput.value < 0 || floorInput.value < 0) {
     alert("No negative values are allowed");
   
   } else {
@@ -39,7 +41,7 @@ submitButton.addEventListener("click" , () => {
 
     for (let i = floorInput.value; i > 0; i--) {
       //Function to genereate floors
-      createFloors(i, LiftInput);
+      createFloors(i, LiftInput.value);
     }
 
     floorInput.value = "";
@@ -83,7 +85,7 @@ function createFloors(floors, lifts) {
 
   floorNumber.classList.add("floorName");
 
-  floorNumber.innerText = `No ${floors}`;
+  floorNumber.innerText = `Floor ${floors}`;
 
   buttonContainer.append(floorNumber);
 
