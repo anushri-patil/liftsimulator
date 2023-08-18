@@ -11,7 +11,7 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  border: 0.5px solid #ff6263;
+  border: 0.5px solid rgb(173, 249, 58);
   width: 20rem;
   height: auto;
   padding: 1em;
@@ -22,7 +22,7 @@
   border-radius: 6px;
   padding: 0.75em 1em;
   color: #fff;
-  background-color: #ff6263;
+  background-color: rgb(173, 249, 58);
   cursor: pointer;
   width: 100%;
   border: none;
@@ -37,11 +37,11 @@
 input {
   width: 100%;
   padding: 0.5em;
-  border: 0.5px solid #ff6263;
+  border: 0.5px solid rgb(173, 249, 58);
   outline: none;
   margin: 0.5em;
   color: antiquewhite;
-  border-radius: 4px;
+  border-radius: 7px;
 }
 
 
@@ -68,12 +68,12 @@ p {
 
 .up-down {
   color: #fff;
-  background: #ff6263;
+  background: rgb(173, 249, 58);
   border: none;
   outline: none;
   padding: 0.5em;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 7px;
   margin: 0.2em;
 }
 
@@ -85,7 +85,7 @@ p {
   width: 100%;
   display: flex;
   height: 100px;
-  border-bottom: 1px solid #ff6263;
+  border-bottom: 1px solid rgb(173, 249, 58);
   position: relative;
 }
 
@@ -93,7 +93,7 @@ p {
   width: 90px;
   height: 100px;
   margin-left: 1em;
-  border: 0.5px solid red;
+  border: 0.5px solid rgb(230, 230, 234);
   z-index: 1;
   background-color: white;
   display: flex;
@@ -106,20 +106,20 @@ p {
 }
 
 .left-door {
-  background: #ff6263;
+  background: rgb(255, 141, 141);
   width: 50%;
   height: 100%;
   border-right: 0.5px solid #fff;
-  transition: transform 2.5s linear;
+  transition: transform 1.5s linear;
   z-index: 2;
 }
 
 .right-door {
-  background: #ff6263;
+  background: rgb(255, 141, 141);
   border-left: 0.5px solid #fff;
   width: 50%;
   height: 100%;
-  transition: transform 2.5s linear;
+  transition: transform 1.5s linear;
   z-index: 2;
 }
 
@@ -157,7 +157,7 @@ p {
     width: 100%;
     display: flex;
     height: 100px;
-    border-bottom: 1px solid #ff6263;
+    border-bottom: 1px solid rgb(173, 249, 58);
     position: relative;
   }
 
@@ -165,7 +165,7 @@ p {
     width: 60px;
     height: 100px;
     margin-left: 0.7em;
-    border: 0.5px solid red;
+    border: 0.5px solid yellow ;
     z-index: 1;
     background-color: white;
     display: flex;
@@ -200,7 +200,7 @@ p {
   width: 100%;
   display: flex;
   height: 100px;
-  border-bottom: 1px solid #ff6263;
+  border-bottom: 1px solid rgb(173, 249, 58);
   position: relative;
 }
 
@@ -244,7 +244,7 @@ p {
     width: 100%;
     display: flex;
     height: 100px;
-    border-bottom: 1px solid #ff6263;
+    border-bottom: 1px solid rgb(128, 201, 240);
     position: relative;
   }
 
